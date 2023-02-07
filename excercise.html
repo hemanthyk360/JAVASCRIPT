@@ -2,23 +2,23 @@
 // program to find the largest among three numbers
 
 // take input from the user
-const num1 = parseFloat(prompt("Enter first number: "));
-const num2 = parseFloat(prompt("Enter second number: "));
-const num3 = parseFloat(prompt("Enter third number: "));
+const a = Number(prompt("Enter first number: "));
+const b = Number(prompt("Enter second number: "));
+const c = Number(prompt("Enter third number: "));
 let largest;
 
 // check the condition
-if(num1 >= num2 && num1 >= num3) {
-    largest = num1;
+if(a >= b && a >= c) {
+    largest = a;
 }
-else if (num2 >= num1 && num2 >= num3) {
-    largest = num2;
+else if (b >= a && b >= c) {
+    largest = b;
 }
 else {
-    largest = num3;
+    largest = c;
 }
 
 // display the result
-document.write("The largest among ", num1," ", num2, " and "," ", num3, " is ", largest)
+document.write("The largest among ", a," ", b, " and "," ", c, " is ", largest)
 console.log("The largest number is " + largest);
 </script>
